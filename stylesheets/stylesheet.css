@@ -1,0 +1,100 @@
+body {
+    background-color: hsl(26, 40%, 92%);
+}
+
+.container {
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.image {
+    width: 300px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+p {
+    font-family: "Montserrat", "sans-serif";
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Fraunces", "sans-serif";
+}
+
+h5 {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.perfume {
+    padding: 25px;
+}
+
+.cardbutton {
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.carticon {
+    padding-right: 10px;
+    position: relative;
+    bottom: -2px;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", "sans-serif";
+    font-size: 30px;
+    font-weight: 700;
+}
+.oldprice{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    position: relative;
+    bottom: -10px;
+    padding-left: 25px;
+}
+.pricecontainer{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 10%;
+        width: 360px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .image {
+        width: 360px;
+        border-radius: 15px 15px 0px 0px;
+        overflow: hidden;
+        height: 280px;
+        object-fit: cover;
+    }
+
+   
+}
